@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB0E55F5-782B-4169-89D8-7E0C12214E57}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizagiEnvSync</RootNamespace>
+    <AssemblyName>BizagiEnvSync</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BizAgi.Commons">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizagi.MD">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Bizagi.MD.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.MD.MetadataManagement">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.MD.MetadataManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.MD.MetadataManagement.UI">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.MD.MetadataManagement.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizagi.MD.Schemas">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Bizagi.MD.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.MD.Tools">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.MD.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizagi.MD.Upgrade">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Bizagi.MD.Upgrade.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.Operations">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.Operations.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.PAL">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.PAL.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.PALII">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.PALII.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.PL.Entities">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.PL.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.PL.Entities.Implementations">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.PL.Entities.Implementations.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.PL.PersistenceEngine">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.PL.PersistenceEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.Publication">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.Publication.dll</HintPath>
+    </Reference>
+    <Reference Include="BizAgi.Publication.Util">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\BizAgi.Publication.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vision.DA">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.DA.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Defs">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Defs.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Expression">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Expression.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Persistence">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Resources">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Settings">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Trace">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Trace.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision.Util.String">
+      <HintPath>..\..\..\..\..\Desktop\bizagi-adt\Vision.Util.String.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizagiEnvSync.cs" />
+    <Compile Include="MyProgressStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
