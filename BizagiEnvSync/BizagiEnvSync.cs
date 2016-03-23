@@ -13,9 +13,6 @@ using BizAgi.Publication.Util;
 using BizAgi.Publication.Util.Dependencies;
 using BizAgi.Publication.Util.AdvancedOptions.ExportMetadata;
 using Vision.DA;
-using Vision.Defs;
-using Vision.Settings;
-using System.Data.SqlClient;
 
 namespace BizagiEnvSync
 {
