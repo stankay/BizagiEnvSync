@@ -3,13 +3,14 @@
 
 What?
 -----
-This is a CLI replacement of Bizagi Advanced Deployment tool (BADT) which is GUI. It has three main functions
+This is a CLI replacement of Bizagi Advanced Deployment tool (BADT) which is GUI. It has three main functions:
+
 1. EXPORT: Generate export package (BEX). Equivalent of Export.exe of BADT.
 2. IMPORT: Analyze BEX and generate SQL diff scripts that can be applied to destination environment. Equivalent
    of CreateImport.exe of BADT.
 3. CLEANUP: Remove all files that are older than 10 days in given dir. Dangerous - use with caution.
 
-Both EXPORT and IMPORT run in configuration that is analogous to leaving GUI tool setting in default setting and
+Both EXPORT and IMPORT run in configuration that is analogous to leaving GUI tool settings in default settings and
 having checked exporting all processes.
 
 Why?
@@ -23,7 +24,7 @@ which is not possible with BADT.
 Building
 --------
 In order to build this code correctly, one must add references to BADT DLLs, i.e. be in posession of BADT. In order 
-to obtatin BADT you have to registered user of BizAgi BPM Suite.
+to obtatin BADT you have to be a registered user of BizAgi BPM Suite.
 
 Running
 -------
